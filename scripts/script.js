@@ -1,60 +1,67 @@
 $(document).ready(function() {
+  var countClickPlayer2 = 0;
+  var countClickPlayer1 = 0;
+  // var countClickPlayer1 = 0;
   //function water() //event Handler
-
-  // var grower1 = document.getElementById('Grower1');
-  // grower1.keydown(function(e){
-  // $("#grower2can").click(function(){
-  //   $("#grower2can").effect("shake");
-  // })
-  // //
-  // $("#grower1can").click(function(){
-  //   $(this).shake();
-  //   })
-  // //   }
-  // })
-// //need event Listener
-
 
   $("body").keypress(function(event){
     let currentImg2 = $("#seeds2");
     let currentImg1 = $("#seeds1");
-
 //grower 2 events when pushing "W"
+  // if(countClickPlayer1 >= 4) {
+  //   //do some alert or whatever
+  // } else if(countClickPlayer2 >=4 ){
+  //   //same thing but for player 2
+  // }
+
     if (event.charCode === 119){
-      if (currentImg2){
-        currentImg2 = document.getElementById('spuds2').getAttribute('src');
-        document.getElementById('seeds2').src = document.getElementById('spuds2').src
+      countClickPlayer2 += 1;
+
+      if (countClickPlayer2 === 4){
+        document.getElementById('seeds2').src = 'imgs/spud.jpeg'
       }
-       if (currentImg2 = document.getElementById('spuds2').getAttribute('src')){
-        currentImg2 = document.getElementById('small-tree2').src;
-        document.getElementById('spuds2').src = document.getElementById('small-tree2').src
+       if (countClickPlayer2 >= 8 && countClickPlayer2 < 15){
+        document.getElementById('seeds2').src = 'imgs/smallTree.jpeg'
       }
-      if (currentImg2 = document.getElementById('small-tree2').getAttribute('src')){
-        currentImg2 = document.getElementById('big-tree2').src;
-        document.getElementById('small-tree2').src = document.getElementById('big-tree2').src
+      if (countClickPlayer2 > 15){
+        document.getElementById('seeds2').src = 'imgs/bigTree1.jpeg'
       }
+
 
     }
+
 //grower 1 events when pushing "P"
     if (event.charCode === 112){
-      if (currentImg1){
-        currentImg1 = document.getElementById('spuds1').getAttribute('src');
-        document.getElementById('seeds1').src = document.getElementById('spuds1').src
+        // console.log("player 1 score:", countClickPlayer1);
+      countClickPlayer1 += 1;
+
+      if (countClickPlayer1 === 4){
+        document.getElementById('seeds1').src = 'imgs/spud.jpeg'
+        // console.log("PRINT ME", countClickPlayer1);
       }
-      if (currentImg1 = document.getElementById('spuds1').getAttribute('src')){
-       currentImg1 = document.getElementById('small-tree1').src;
-       document.getElementById('spuds1').src = document.getElementById('small-tree1').src
-     }
-      if (currentImg1 = document.getElementById('small-tree1').getAttribute('src')){
-       currentImg1 = document.getElementById('big-tree1').src;
-       document.getElementById('small-tree1').src = document.getElementById('big-tree1').src
+
+      if ((countClickPlayer1 >= 8 && countClickPlayer1 < 15)){
+        // console.log("PRINT ME #2", countClickPlayer1);
+       document.getElementById('seeds1').src = 'imgs/smallTree.jpeg'
      }
 
-
+      if (countClickPlayer1 >= 15){
+       countClickPlayer1 += 1;
+       document.getElementById('seeds1').src = 'imgs/bigTree2.jpeg'
+     }
 
     }
 
-  });
+    // if(event.charCode === 99){ //WHY IS THIS NOT WORKINGGGGGG??
+    //   if (currentImg1 = document.getElementById('small-tree1').getAttribute('src')){
+    //     currentImg1 = document.getElementById('spuds1').src;
+    //     console.log("HERE", currentImg1);
+    //     document.getElementById('small-tree1').src = document.getElementById('spuds1').src;
+    //
+    //   }
+  })
+
+});
 
 
 // $(document).ready (function(){
@@ -63,8 +70,6 @@ $(document).ready(function() {
 //   });
 // });
 
-
-});
 
 
 
