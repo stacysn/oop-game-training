@@ -1,0 +1,12 @@
+body {
+  background-color: pink;
+}
+
+h1 {
+  text-align: center;
+}
+
+#seeds {
+  height: 30%;
+  width: 50%;
+}

@@ -1,0 +1,63 @@
+<!--
+Movement function
+2 players:
+  - player one use arrows for car movement
+  - player two use other keys for car movement
+      - could have method that defines which key does what -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <!-- set viewport to device width to allow responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="http://csshake.surge.sh/csshake.min.css">
+  <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="scripts/script.js"></script>
+
+    <title> Fast Growning Mutant Trees </title>
+  </head>
+
+  <body>
+      <div id="container">
+
+        <header>
+            <h1> Grow Your Tree!! </h1>
+          <p id="grower-1-keys"> Use "W" key to water your plant and "X" to slow down Grower Two's plant! </p>
+          <p id="grower-2-keys"> Use "Up-arrow" to water your plant and "P" to slow down Grower One's plant! </p>
+          <input type="button" value="Grow Again!" id="reset"></input>
+        </header>
+
+      <div class="cans">
+        <img class="can-grower2" id="grower2can" src="imgs/grower2can.jpeg"></img>
+        <img class="can-grower1" id="grower1can" src="imgs/grower1can.jpeg"></img>
+      </div>
+
+      <div class="first-process current-stage">
+        <img id="seeds2" src="imgs/redwoodSeed.jpeg"></img>
+        <img id="seeds1" src="imgs/redwoodSeed.jpeg"></img>
+
+      </div>
+
+      <div class="second-process">
+        <img id="spuds2" src="imgs/spud.jpeg" hidden></img>
+        <img id="spuds1" src="imgs/spud.jpeg" hidden></img>
+      </div>
+
+      <div class="small-tree">
+        <img id="small-tree2" src="imgs/smallTree.jpeg" hidden></img>
+        <img id="small-tree1" src="imgs/smallTree.jpeg" hidden></img>
+      </div>
+
+  </body>
+</html>
