@@ -13,12 +13,7 @@ Location: SF
 
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 
 ### Data Structures for "Race-Game"
 Object types: Water, Game, and Tree.
