@@ -83,6 +83,7 @@ $(document).ready(function() {
     countClickPlayer2 = 0;
     document.getElementById('seeds1').src = 'imgs/magicSeed.png'
     document.getElementById('seeds2').src = 'imgs/magicSeed.png'
+    $('h1').html("Grow Your Tree!")
 
   };
 
