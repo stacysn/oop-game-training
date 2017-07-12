@@ -1,18 +1,17 @@
-/*.background {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}*/
+h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+.directions {
+  color: #96F449;
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 700;
+}
 
 body{
   font-family: 'Roboto', sans-serif;
   color: #DAFFEB;
-}
-h1 {
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-
 }
 
 #seeds1 {
@@ -44,12 +43,6 @@ h1 {
   width: 150px;
 }
 
-.directions {
-  color: #96F449;
-  text-align: center;
-  font-size: 2vw;
-  font-weight: 700;
-}
 
 #reset {
   background-color: #2E933C;
