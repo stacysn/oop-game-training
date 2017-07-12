@@ -1,6 +1,9 @@
-body {
-  background-color: pink;
-}
+/*.background {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}*/
 
 h1 {
   text-align: center;
@@ -9,4 +12,20 @@ h1 {
 #seeds {
   height: 30%;
   width: 50%;
+}
+
+#seeds1 {
+  position: fixed;
+  bottom: 0px;
+  right: 57%;
+  width: 100px;
+  height: auto;
+
+}
+
+#seeds2 {
+  position: fixed;
+  bottom: 0px;
+  right: 10%;
+  width: 100px;
 }
