@@ -38,7 +38,6 @@ $(document).ready(function() {
 
 //grower 2 events when pushing "P"
     if (event.charCode === 112){
-        // console.log("player 1 score:", countClickPlayer1);
       countClickPlayer2 += 1;
 
       if (countClickPlayer2 === 4){
