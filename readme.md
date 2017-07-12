@@ -5,7 +5,7 @@ Location: SF
 
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
-### User Stories & Game Mechanics
+### Grow a tree and compete with a buddy! 
 1. There will have 2 tree growers.
 2. Players will water the plant by pushing their designated button. Each time a button is pushed a few times, the plant grows to the next stage.
 3. Players can decrease opponent's points making them slower to grow.
