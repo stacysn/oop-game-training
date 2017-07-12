@@ -16,6 +16,9 @@ Movement function
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="http://csshake.surge.sh/csshake.min.css">
+<!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
   <!-- Custom CSS -->
 
     <link rel="stylesheet" href="styles/styles.css">
@@ -28,24 +31,28 @@ Movement function
     <title> Fast Growing Mutant Trees </title>
   </head>
 
-  <body background = "imgs/background-oop.jpeg">
+  <body background = "http://3.bp.blogspot.com/-8Jq3-Qk8x_c/VQHAwAXZ4RI/AAAAAAAAHnE/eYV00GIQStM/s1600/Orange%2Bdirtl%2Btexture-1.jpg">
       <div id="container">
 
         <header>
             <h1> Grow Your Tree!! </h1>
-              <p id="grower-1-keys"> Use "W" key to water your plant and "X" to slow down Grower Two's plant! </p>
-              <p id="grower-2-keys"> Use "Up-arrow" to water your plant and "P" to slow down Grower One's plant! </p>
-              <input type="button" value="Grow Again!" id="reset"></input>
+
+              <div class="directions">
+                <p id="grower-1-keys"> Use "W" key to water your plant and "X" to slow down Grower Two's plant! </p>
+                <p id="grower-2-keys"> Use "Up-arrow" to water your plant and "P" to slow down Grower One's plant! </p>
+                <input class="shake" type="button" value="Grow Again!" id="reset"></input>
+              </div>
+
         </header>
 
           <div class="cans">
-            <img class="can-grower2 col-xs-4" id="grower2can" src="imgs/watercan2.jpeg"></img>
-            <img class="can-grower1 col-xs-4" id="grower1can" src="imgs/watercan1.jpeg"></img>
+            <img class="can-grower2 shake" id="grower2can" src="http://www.clker.com/cliparts/4/9/6/c/126876920746669362watering-can-hi.png"></img>
+            <img class="can-grower1 shake" id="grower1can" src="https://wallazee.global.ssl.fastly.net/images/dynamic/items/552-1024.png"></img>
           </div>
 
           <div class="first-process current-stage">
-            <img id="seeds2" src="imgs/redwoodSeed.jpeg"></img>
-            <img id="seeds1" src="imgs/redwoodSeed.jpeg"></img>
+            <img id="seeds2" src="https://vignette1.wikia.nocookie.net/quiz-rpg-the-world-of-mystic-wiz/images/f/fc/Seed_of_the_Eternal_Tree_transparent.png/revision/latest?cb=20141230070607"></img>
+            <img id="seeds1" src="https://vignette1.wikia.nocookie.net/quiz-rpg-the-world-of-mystic-wiz/images/f/fc/Seed_of_the_Eternal_Tree_transparent.png/revision/latest?cb=20141230070607"></img>
           </div>
 <!--
           <div class="second-process">

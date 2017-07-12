@@ -54,4 +54,4 @@ We build "user stories" as a way to structure the main capabilities of the sites
   * Decrease opponent's plant height by 1 step
 
 3. The user wins when the plant reaches the full grown tree!
-  * Once player has the full grown tree, an alert/sound/sunshine will appear.
+  * An alert will announce the winner at the top of the page

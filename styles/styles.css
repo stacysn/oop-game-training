@@ -5,22 +5,22 @@
   left: 0;
 }*/
 
+body{
+  font-family: 'Roboto', sans-serif;
+  color: #DAFFEB;
+}
 h1 {
   text-align: center;
-}
+  font-family: 'Roboto', sans-serif;
 
-#seeds {
-  height: 30%;
-  width: 50%;
 }
 
 #seeds1 {
   position: fixed;
   bottom: 0px;
-  right: 57%;
+  right: 77%;
   width: 100px;
   height: auto;
-
 }
 
 #seeds2 {
@@ -28,4 +28,29 @@ h1 {
   bottom: 0px;
   right: 10%;
   width: 100px;
+}
+
+#grower2can {
+  position: fixed;
+  top: 300px;
+  right: 30%;
+  width: 150px;
+}
+
+#grower1can {
+  position: fixed;
+  top: 300px;
+  right: 60%;
+  width: 150px;
+}
+
+.directions {
+  color: #96F449;
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 700;
+}
+
+#reset {
+  background-color: #2E933C;
 }
